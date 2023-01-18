@@ -1,0 +1,19 @@
+<html>
+<body>
+<center>
+    <input type="text" id="presentName" style="height: 50px; margin-bottom: 20px; font-size: 25px;"/><br>
+    <button onclick="addGift()" style="border-radius: 25px; background-color: blue; color: white; height: 50px; width: 100px; margin-bottom: 20px; margin-top: 20px">Dodaj prezent</button><br>
+    <button onclick="generateCard()" style="border-radius: 25px; background-color: blue; color: white; height: 50px; width: 100px;">Generuj kartkę</button><br>
+</center>
+<script type="text/javascript">
+    function addGift()
+    {
+        activity.addGift(document.getElementById("presentName").value);
+    }
+    function generateCard()
+    {
+        document.getElementById("date").value=activity.changeWindow();
+    }
+</script>
+</body>
+</html>

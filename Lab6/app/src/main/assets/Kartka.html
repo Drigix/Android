@@ -1,0 +1,17 @@
+<html>
+    <body onload="getList()" style="background: lightblue url('assets/kartka.jpg') no-repeat; background-size: 100% 100%;">
+     
+    <div>
+        <p id = "list" style="height: 100%; width: 100%; position: fixed; top: 100px; left: 30px; overflow-y: scroll;">
+             
+        </p>
+    </div>
+    <script type="text/javascript">
+        function getList()
+        {
+            let presents = activity.getList();
+            document.getElementById("list").innerHTML = presents;
+        }
+    </script>
+    </body>
+</html>
